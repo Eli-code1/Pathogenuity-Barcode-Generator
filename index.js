@@ -8,13 +8,13 @@ import { qrCode } from "./qrCode";
 
 // Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyC4dUNYpFWX47HL84kHpEWt67yiJ97b5Cc",
-    authDomain: "barcodegenerator-fb518.firebaseapp.com",
-    projectId: "barcodegenerator-fb518",
-    storageBucket: "barcodegenerator-fb518.appspot.com",
-    messagingSenderId: "974105285506",
-    appId: "1:974105285506:web:7751aca6814d4f2778359b",
-    databaseURL: "https://barcodegenerator-fb518-default-rtdb.firebaseio.com",
+  apiKey: "AIzaSyATrBJXCJQsBQ8WT-E4a8PmMfEtHj5kHb8",
+  authDomain: "barcode-generator-80945.firebaseapp.com",
+  projectId: "barcode-generator-80945",
+  storageBucket: "barcode-generator-80945.appspot.com",
+  messagingSenderId: "592941838858",
+  appId: "1:592941838858:web:fdda79896dde0e0efde5f3",
+  databaseURL: "https://barcode-generator-80945-default-rtdb.firebaseio.com",
 };
 
 // Initialize Firebase
