@@ -308,7 +308,7 @@ export function barcodeAndFirebase(database, ref, get, set, child){
     //get the last barcode number
     //handle if prefix is WT or AE (eg. AE0000001 or WT0000001)
 
-    if (lastBarcode.substring(0, 1) == "AE"){
+    if (lastBarcode.substring(0, 1) == "AP"){
       var lastBarcodeNumber = lastBarcode.substring(1);
     }
     else{
@@ -337,7 +337,7 @@ export function barcodeAndFirebase(database, ref, get, set, child){
     }
     if (isAerosolSense){
       //add the "AE" to the front of the new barcode number
-      var newBarcode = "AE" + newBarcodeNumberString;
+      var newBarcode = "AP" + newBarcodeNumberString;
 
       set(ref(db, 'aerosolSense/' + (parseInt(lastIndex) + 1).toString()), {
       barcode: newBarcode,
@@ -398,7 +398,7 @@ export function barcodeAndFirebase(database, ref, get, set, child){
         //get the last barcode number
         //handle if prefix is WT or AE (eg. AE0000001 or WT0000001)
     
-        if (lastBarcode.substring(0, 1) == "AE"){
+        if (lastBarcode.substring(0, 1) == "AP"){
           var lastBarcodeNumber = lastBarcode.substring(1);
         }
         else{
@@ -427,7 +427,7 @@ export function barcodeAndFirebase(database, ref, get, set, child){
         }
         if (isAerosolSense){
           //add the "AE" to the front of the new barcode number
-          var newBarcode = "AE" + newBarcodeNumberString;
+          var newBarcode = "AP" + newBarcodeNumberString;
 
           set(ref(db, 'aerosolSense/' + (parseInt(lastIndex) + 1 + trackNewBarcodesCreated).toString()), {
           barcode: newBarcode,
