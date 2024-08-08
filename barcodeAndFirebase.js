@@ -366,7 +366,7 @@ export function barcodeAndFirebase(database, ref, get, set, child){
     let rowHeight;
     tableWidth = 5 * 1.28; // total width of the table
     cellWidth = 1.28; // width of each cell
-    rowHeight = 1.25; // height of each row
+    rowHeight = .75; // height of each row
 
     // create a new table element
     const table = document.createElement("table");
@@ -436,7 +436,7 @@ export function barcodeAndFirebase(database, ref, get, set, child){
         }
         const data = newBarcode;
         const canvas = document.createElement("canvas");
-        JsBarcode(canvas, data, { format: "CODE128", displayValue: true, fontSize: 12, width: 1, height: 125 });
+        JsBarcode(canvas, data, { format: "CODE128", displayValue: true, fontSize: 12, width: 1, height: 50 });
         const barcodeImage = canvas.toDataURL("image/png");
         image.src = barcodeImage;
 
